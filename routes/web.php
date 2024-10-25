@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfileController1;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
+// Route::get('/data/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
 
 Route::get('/user/profile', [UserController::class, 'profile']);
 
