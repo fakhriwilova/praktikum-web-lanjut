@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+@section('content')
+<div>
+    <!-- Isi Section -->
     <form action="{{ route('user.store') }}" method="POST">
         @csrf
         <label for="nama">Nama:</label>
@@ -26,6 +21,5 @@
         <button type="submit">Submit</button>
     </form>
 
-</body>
-
-</html>
+</div>
+@endsection
